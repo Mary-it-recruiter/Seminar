@@ -42,19 +42,19 @@
 // 34, 5 -> не кратно, остаток 4
 // 16, 4 -> кратно
 
-Console.Write("Введите число a = ");
-int first = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число b = ");
-int second = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число a = ");
+// int first = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число b = ");
+// int second = Convert.ToInt32(Console.ReadLine());
 
-if (first % second == 0)
-{
-    Console.Write($"{first},{second} - кратно");
-}
-else
-{
-    Console.Write($"{first},{second} - некратно, остаток {first % second}");
-}
+// if (first % second == 0)
+// {
+//     Console.Write($"{first},{second} - кратно");
+// }
+// else
+// {
+//     Console.Write($"{first},{second} - некратно, остаток {first % second}");
+// }
 
 // Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно
 // 7 и 23.
@@ -62,3 +62,15 @@ else
 // 14 -> нет
 // 46 -> нет
 // 161 -> да
+
+Console.Write("Введите число: ");
+int first = Convert.ToInt32(Console.ReadLine());
+
+if ((first % 7 == 0) && (first % 23 == 0))
+{
+    Console.Write($"Отлично! Число {first} кратно 7 и 23");
+}
+else
+{
+    Console.Write($" Число {first} не кратно 7 и 23");
+}
