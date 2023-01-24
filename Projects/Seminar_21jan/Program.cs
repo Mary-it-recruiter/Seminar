@@ -125,3 +125,94 @@
 // {
 //     Console.WriteLine(Math.Pow(i, 2));
 // }
+
+
+//Семинар от 22 января
+
+// 24) Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
+// 7 -> 28
+// 4 -> 10
+// 8 -> 36
+
+// Console.WriteLine("Введите число A: ");
+// int A = Convert.ToInt32(Console.ReadLine());
+
+// int Sum(int A)
+// {
+//     // int count = A;
+//     int sum = 0;
+//     for (int i = 0; i <= A; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     return sum;
+// }
+
+// Console.WriteLine($"Сумма чисел от 1 до А -> {Sum(A)}");
+
+// Задача 26: Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
+// 456 -> 3
+// 78 -> 2
+// 89126 -> 5
+
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// int Count(int number)
+// {
+//     int count = 0;
+//     if (number == 0)
+//     {
+//         count = 1;
+//     }
+
+//     while (number != 0)
+//     {
+//         number = number / 10;
+//         count = count + 1;
+//     }
+//     return count;
+// }
+
+
+// int x = Count(number);
+// Console.WriteLine(x);
+
+
+
+// Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+// 4 -> 24
+// 5 -> 120
+// Console.WriteLine("Введите число: ");
+// int A = Convert.ToInt32(Console.ReadLine());
+
+// int Sum(int A)
+// {
+//     int sum = 1;
+//     for (int i = 1; i <= A; i++)
+//     {
+//         sum = sum * i;
+//     }
+//     return sum;
+// }
+
+// int x = Sum(A);
+// Console.WriteLine(x);
+
+
+
+
+// Задача 30: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
+
+// int[] array = new int[8];
+
+// Console.WriteLine($"Длинна массива ={array.Length}");
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(0, 2);
+//     Console.Write($"{array[i]} ");
+// }
+
+
+
