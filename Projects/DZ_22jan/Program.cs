@@ -60,15 +60,15 @@
 
 // 6, 1, 33 -> [6, 1, 33]
 
-Console.WriteLine("Введите количество цифр в рандомном массиве: ");
-int x = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[x];
+// Console.WriteLine("Введите количество цифр в рандомном массиве: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[x];
 
 
-Console.WriteLine($"Длинна массива ={array.Length}");
-for (int i = 0; i < array.Length; i++)
-{
-    array[i] = new Random().Next(0, 10);
-    Console.Write($"[ {array[i]} ] ");
-}
+// Console.WriteLine($"Длинна массива ={array.Length}");
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(0, 10);
+//     Console.Write($"[ {array[i]} ] ");
+// }
 
