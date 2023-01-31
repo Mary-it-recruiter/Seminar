@@ -125,3 +125,109 @@
 
 // }
 // Console.WriteLine(abc);
+
+
+//Семинар от 29 января
+// int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// foreach (var item in nums)
+// {
+//     Console.WriteLine(item);
+// }
+
+// int[,] nums2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 0, 4, 2 } };
+
+// // int[,] nums3 = new int[4, 3];
+// // foreach (var item in nums2)
+// // {
+// //     Console.WriteLine(item);
+// // }
+// for (int i = 0; i < nums2.GetLength(0); i++)
+// {
+//     Console.WriteLine(nums2[i, 0]);
+// }
+
+// Задача 39: Напишите программу, которая перевернёт одномерный массив (последний элемент будет на первом месте, а первый - на последнем и т.д.)
+// [1 2 3 4 5] -> [5 4 3 2 1]
+// [6 7 3 6] -> [6 3 7 6]
+
+// int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// foreach (var item in a.Reverse())
+// {
+//     Console.Write($"{item} ");
+// }
+
+// Второй способ:
+
+// int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// int temp;
+// int j = nums.Length - 1;
+// for (int i = 0; i < nums.Length / 2; i++)
+// {
+//     temp = nums[j];
+//     nums[j] = nums[i];
+//     nums[i] = temp;
+//     j = j - 1;
+// }
+
+// foreach (var item in nums)
+// {
+//     Console.Write($"{item} ");
+// }
+
+
+
+// Задача 40: Напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник с сторонами такой длины.
+// Теорема о неравенстве треугольника: каждая сторона треугольника меньше суммы двух других сторон
+
+// bool FindTriangle(int a, int b, int c)
+// {
+//     if (a < b + c && b < a + c && c < a + b)
+//     {
+//         return true;
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// }
+// Console.Write("Введите длинну первой стороны треугольника: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите длинну второй стороны треугольника: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите длинну третьей стороны треугольника: ");
+// int z = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine(FindTriangle(x, y, z));
+
+// Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+// 45 -> 101101
+// 3 -> 11
+// 2 -> 10
+
+// Console.WriteLine("Введите число: ");
+// string A = Console.ReadLine();
+// int from = 10;
+// int to = 2;
+
+// string binary = Convert.ToString(Convert.ToInt32(A, from), to);
+// Console.WriteLine(binary);
+
+// Второе рещение:
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+string result = "";
+while (num > 0)
+{
+    result = Convert.ToString(num % 2) + result;
+    num = num / 2;
+}
+Console.WriteLine(result);
+
+
+// Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
+// Если N = 5 -> 0 1 1 2 3
+// Если N = 3 -> 0 1 1
+// Если N = 7 -> 0 1 1 2 3 5 8
+
+
+// Задача 45: Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
