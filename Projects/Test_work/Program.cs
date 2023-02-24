@@ -15,3 +15,5 @@ foreach (var value in array)
         realSize++;
     }
 }
+Console.WriteLine("[{0}]", string.Join(Environment.NewLine, result, 0, realSize));
+Console.ReadKey(true);
